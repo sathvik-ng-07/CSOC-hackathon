@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #0c0c0d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+
+    display: block;
+   
+    
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>The day women in India will feel safe to do the most basic things like going to nearby shops without the fear of anything is when we will truly succeed as a country. The moment every citizen understands what consent is and starts respecting the women around them is when we can truly accomplish the dream that our predecessors dreamt of. </p>
+  <p>With the help of this website our team aspires to contribute to our society so that we create a beautiful India where every women can feel safe and secured</p>
+</div>
+
+<h2 style="text-align:center">Quartz Programmers</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="profile1.jpg" alt="Sathvik N.G." style="width:100%">
+      <div class="container">
+        <h2>Sathvik N.G.</h2>
+        <p class="title">Frontend Developer</p>
+        <p>A Tech Enthusuiast with good webpage designing skills and having experience with HTML, CSS and Git </p>
+        <p></p>
+        <a href=""><button class="button">Contact</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="" alt="Kunal Yadav" style="width:100%">
+      <div class="container">
+        <h2>Kunal Yadav</h2>
+        <p class="title">Team Member 2</p>
+        <p> lorem ipsum ipsum lorem.</p>
+        <p>jaljla</p>
+        <a href=""><button class="button">Contact</button></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="" alt="Aizaz Ahmed" style="width:100%">
+      <div class="container">
+        <h2>Aizaz Ahmed</h2>
+        <p class="title">Team Member 3</p>
+        <p> lorem ipsum ipsum lorem.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href=""><button class="button">Contact</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
